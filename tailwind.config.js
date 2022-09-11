@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./app/**/*.{html,ejs}"],
+  content: ["./app/**/*.{html,ejs,js}"], // 必須得加上 js，不然動態 class 名稱會無效
   theme: {
     extend: {
       lineHeight: { // 此次客製化規則，lh 10 以上，每差 10px 差 1 lh
@@ -13,7 +13,26 @@ module.exports = {
         '11': '3.125rem', /* 50px */
         '13': '4.375rem', /* 70px */
         '14.5': '5.3125rem', /* 85px */
-      }
+      },
+      width: {
+        '9/10': '90%',
+        '21.25': '5.3125rem', /* 85px */
+      },
+      height: {
+        '4.5': '1.125rem', /* 18px */
+      },
+      fontFamily: { // 空格記得要兩種引號
+        'noto': ['"Noto Serif TC"',
+          '"-apple - system"',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          '"Microsoft JhengHei"',
+          '"Helvetica Neue"',
+          'monospace',
+          'Arial',
+          'cursive',
+          'sans-serif'],
+      },
     },
   },
   plugins: [
