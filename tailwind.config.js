@@ -22,7 +22,7 @@ module.exports = {
         '4.5': '1.125rem', /* 18px */
       },
       fontFamily: { // 空格記得要兩種引號
-        'noto': ['"Noto Serif TC"',
+        'noto': ['"Noto Sans TC"',
           '"-apple - system"',
           'BlinkMacSystemFont',
           '"Segoe UI"',
