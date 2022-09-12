@@ -21,20 +21,21 @@
 
   <body class="transition-colors duration-500">
     <header
-      class="flex items-center justify-between px-3 py-4 bg-gray-100 border-b border-black"
+      class="flex items-center justify-between px-3 py-4 bg-gray-100 border-b border-black lg:py-0 lg:px-18"
     >
       <!-- logo -->
       <h1>
         <a
           id="header-logo"
           href="index.html"
-          class="block overflow-hidden bg-contain w-21.25 h-4.5 transition-opacity duration-500 indent-101 bg-logo whitespace-nowrap"
+          class="block overflow-hidden bg-contain w-21.25 lg:w-47.5 lg:h-10 bg-no-repeat h-4.5 transition-opacity duration-500 indent-101 bg-logo whitespace-nowrap"
         >
           ART NFT
         </a>
       </h1>
       <!-- icon-box -->
-      <div id="icon-box" class="flex items-center">
+      <div id="icon-box" class="flex items-center lg:hidden">
+        <!-- dynamic-search-bar -->
         <div id="search-text-bar" class="hidden w-full">
           <i
             id="go-back"
@@ -48,11 +49,13 @@
             placeholder="搜尋作品名稱、藝術家名稱"
           />
         </div>
+        <!-- search-icon -->
         <i
           id="search"
-          class="text-lg text-black cursor-pointer fa-solid fa-magnifying-glass hover:text-red-500"
+          class="text-lg text-black cursor-pointer lg:hidden lg:ml-6 fa-solid fa-magnifying-glass hover:text-red-500"
         ></i>
-        <div class="w-10 pl-6">
+        <!-- burger -->
+        <div id="burger-box" class="w-10 pl-6 lg:hidden">
           <i
             id="burger"
             class="text-lg text-black transition-opacity duration-1000 cursor-pointer fa-solid fa-bars hover:text-red-500"
@@ -63,10 +66,48 @@
           ></i>
         </div>
       </div>
+      <ul class="hidden lg:flex lg:items-center">
+        <li class="px-12 border-l border-black lg:py-8">
+          <div id="search-area" class="hidden lg:flex">
+            <input
+              class="p-0 bg-transparent border-0 focus:ring-0 w-72 placeholder:font-noto"
+              type="text"
+              name="search-text"
+              id="search-text"
+              placeholder="搜尋作品名稱、藝術家名稱"
+            />
+            <i
+              class="text-2xl leading-6 text-black transition-colors duration-300 cursor-pointer lg:ml-6 fa-solid fa-magnifying-glass hover:text-red-500"
+            ></i>
+          </div>
+        </li>
+        <li class="border-l border-black">
+          <a
+            class="block px-12 py-8 transition-colors duration-300 hover:text-red-500"
+            href="#"
+            >探索</a
+          >
+        </li>
+        <li class="border-l border-black">
+          <a
+            class="block px-12 py-8 transition-colors duration-300 hover:text-red-500"
+            href="#"
+            >市值</a
+          >
+        </li>
+        <li class="border-l border-black">
+          <a
+            class="block py-8 pl-12 transition-colors duration-300 hover:text-red-500"
+            href="#"
+          >
+            <i class="block text-2xl leading-6 fa-solid fa-wallet"></i>
+          </a>
+        </li>
+      </ul>
       <!-- burger-content -->
       <div
         id="burger-content"
-        class="absolute invisible top-15.25 left-0 px-3 bg-white z-10 w-full"
+        class="absolute invisible top-15.25 left-0 px-3 bg-white z-10 w-full text-center"
       >
         <a
           class="block py-6 px-37.5 border-b border-black hover:text-red-500 font-bold"
