@@ -33,6 +33,21 @@ module.exports = {
           'cursive',
           'sans-serif'],
       },
+      opacity: {
+        '65': '0.65',
+      },
+      spacing: {
+        '15.25': '3.8125rem',
+        '33': '8.25rem',
+        '37.5': '9.375rem',
+        '101': '101%',
+      },
+      backgroundImage: {
+        'logo': "url('../images/logo.svg')",
+      },
+      transitionProperty: {
+        'height': 'height',
+      }
     },
   },
   plugins: [
