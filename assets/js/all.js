@@ -7,6 +7,8 @@ var goBack = document.querySelector('#go-back');
 var searchText = document.querySelector('#search-text');
 var search = document.querySelector('#search');
 var burger = document.querySelector('#burger');
+var burgerCancel = document.querySelector('#burger-cancel');
+var burgerContent = document.querySelector('#burger-content');
 
 if (headerLogo) {
   search.addEventListener('click', function () {
@@ -23,6 +25,18 @@ if (headerLogo) {
     iconBox.classList.remove('justify-between', 'w-full');
     searchTextBar.classList.add('hidden');
     burger.classList.remove('hidden');
+  });
+  burger.addEventListener('click', function () {
+    document.body.classList.add('bg-gray-900/65');
+    burger.classList.add('hidden');
+    burgerCancel.classList.remove('hidden');
+    burgerContent.classList.remove('opacity-0');
+  });
+  burgerCancel.addEventListener('click', function () {
+    document.body.classList.remove('bg-gray-900/65');
+    burger.classList.remove('hidden');
+    burgerCancel.classList.add('hidden');
+    burgerContent.classList.add('opacity-0');
   });
 }
 //# sourceMappingURL=all.js.map
