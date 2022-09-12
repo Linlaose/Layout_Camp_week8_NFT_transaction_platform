@@ -6,11 +6,12 @@ var searchTextBar = document.querySelector('#search-text-bar');
 var goBack = document.querySelector('#go-back');
 var searchText = document.querySelector('#search-text');
 var search = document.querySelector('#search');
+var burgerBox = document.querySelector('#burger-box');
 var burger = document.querySelector('#burger');
 var burgerCancel = document.querySelector('#burger-cancel');
 var burgerContent = document.querySelector('#burger-content');
 
-if (headerLogo) {
+if (headerLogo && window.innerWidth < 640) {
   search.addEventListener('click', function () {
     headerLogo.classList.add('hidden'); // 表頭 logo
 
@@ -18,12 +19,14 @@ if (headerLogo) {
 
     searchTextBar.classList.remove('hidden'); // 顯現輸入容器
 
+    burgerBox.classList.remove('w-10', 'pl-6');
     burger.classList.add('hidden'); // 漢堡選單
   });
   goBack.addEventListener('click', function () {
     headerLogo.classList.remove('hidden');
     iconBox.classList.remove('justify-between', 'w-full');
     searchTextBar.classList.add('hidden');
+    burgerBox.classList.add('w-10', 'pl-6');
     burger.classList.remove('hidden');
   });
   burger.addEventListener('click', function () {
