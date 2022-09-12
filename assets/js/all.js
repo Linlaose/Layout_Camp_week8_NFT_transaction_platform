@@ -30,13 +30,13 @@ if (headerLogo) {
     document.body.classList.add('bg-gray-900/65');
     burger.classList.add('hidden');
     burgerCancel.classList.remove('hidden');
-    burgerContent.classList.remove('opacity-0');
+    burgerContent.classList.remove('invisible');
   });
   burgerCancel.addEventListener('click', function () {
     document.body.classList.remove('bg-gray-900/65');
     burger.classList.remove('hidden');
     burgerCancel.classList.add('hidden');
-    burgerContent.classList.add('opacity-0');
+    burgerContent.classList.add('invisible');
   });
 }
 //# sourceMappingURL=all.js.map
