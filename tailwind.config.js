@@ -2,6 +2,9 @@ module.exports = {
   content: ["./app/**/*.{html,ejs,js}"], // 必須得加上 js，不然動態 class 名稱會無效
   theme: {
     extend: {
+      fontSize: {
+        '32': '2rem',
+      },
       lineHeight: { // 此次客製化規則，lh 10 以上，每差 10px 差 1 lh
         '4.1': '1.0625rem', /* 17px */
         '4.2': '1.125rem', /* 18px */
@@ -17,6 +20,7 @@ module.exports = {
       },
       width: {
         '9/10': '90%',
+        '5/4': '125%',
         '21.25': '5.3125rem', /* 85px */
         '47.5': '11.875rem',
       },
@@ -57,5 +61,8 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
+    require('tailwindcss-writing-mode')({
+      variants: ['responsive', 'hover']
+    }),
   ],
 }

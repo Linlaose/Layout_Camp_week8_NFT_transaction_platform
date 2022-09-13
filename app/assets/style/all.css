@@ -27,6 +27,7 @@
     line-height: 19px;
     border: 1px solid #000;
     overflow: hidden;
+    transition: all .3s;
   }
   .btn-more:hover{
     color: #fff;
@@ -43,6 +44,7 @@
     border-width: 16px;
     border-style: solid;
     border-color: transparent transparent #E6553B transparent;
+    transition: all .3s;
   }
   .btn-more:hover::after{
     border-color: transparent transparent #000 transparent;
