@@ -30,7 +30,9 @@ module.exports = {
       },
       height: {
         '4.5': '1.125rem', /* 18px */
+        '86': '21.5rem', /* 344px */
         '93.5': '23.375rem', /* 374px */
+        '109.75': '27.4375rem',
       },
       fontFamily: { // 空格記得要兩種引號
         'noto': ['"Noto Sans TC"',

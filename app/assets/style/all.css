@@ -79,10 +79,11 @@
     border-color: transparent transparent #E6553B transparent;
     transition: all .3s;
   }
-  
   .title-btn-more:hover::after {
     border-color: transparent transparent #000 transparent;
   }
+
+  
 }
 
 @layer utilities{
@@ -92,4 +93,34 @@
   .ranking-item:hover .ranking-item-hover{
     opacity: 1;
   }
+}
+
+.swiper-slide{
+  transition: all 1s;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  filter: grayscale(100);
+  width: 24% !important;
+  height: 50%;
+}
+
+.swiper-slide-active{
+  width: 49% !important;
+}
+
+.swiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 0;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.swiper-pagination-bullet-active{
+  width: 16px;
+  height: 8px;
+  background: #E6553B;
 }
