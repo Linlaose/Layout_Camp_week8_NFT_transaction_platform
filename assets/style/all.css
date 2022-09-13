@@ -697,6 +697,42 @@ select {
 .btn-more:hover::after{
     border-color: transparent transparent #000 transparent;
   }
+.title-btn-more{
+    position: relative;
+    width: 132px;
+    padding: 8px 48px;
+    font-size: 18px;
+    line-height: 19px;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+.title-btn-more:hover{
+    color: #fff;
+    background: #E6553B;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+.title-btn-more::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent #E6553B transparent;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+.title-btn-more:hover::after {
+    border-color: transparent transparent #000 transparent;
+  }
 .invisible {
   visibility: hidden;
 }
@@ -742,6 +778,9 @@ select {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .ml-4 {
   margin-left: 1rem;
@@ -798,6 +837,11 @@ select {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .items-center {
   -webkit-box-align: center;
@@ -931,6 +975,9 @@ select {
 .pt-4 {
   padding-top: 1rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pl-6 {
   padding-left: 1.5rem;
 }
@@ -966,6 +1013,9 @@ select {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.text-32 {
+  font-size: 2rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -997,6 +1047,12 @@ select {
 }
 .leading-8 {
   line-height: 2rem;
+}
+.leading-7\.1 {
+  line-height: 1.8125rem;
+}
+.leading-7 {
+  line-height: 1.75rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -1098,12 +1154,24 @@ select {
     margin-top: 0px;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .lg\:ml-6 {
     margin-left: 1.5rem;
   }
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
   }
 
   .lg\:flex {
@@ -1200,6 +1268,11 @@ select {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1239,6 +1312,10 @@ select {
     padding-top: 3rem;
   }
 
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1258,5 +1335,9 @@ select {
 
   .lg\:leading-10 {
     line-height: 2.5rem;
+  }
+
+  .lg\:leading-11 {
+    line-height: 3.125rem;
   }
 }
