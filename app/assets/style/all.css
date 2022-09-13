@@ -84,3 +84,12 @@
     border-color: transparent transparent #000 transparent;
   }
 }
+
+@layer utilities{
+  .ranking-item-top:hover .ranking-item-top-hover{
+    opacity: 1;
+  }
+  .ranking-item:hover .ranking-item-hover{
+    opacity: 1;
+  }
+}

@@ -140,11 +140,21 @@ current: index
     <!-- PC 版 -->
     <ul class="hidden lg:mt-12 lg:grid lg:grid-cols-12 lg:gap-6">
       <!-- 散步遇到的女人 -->
-      <li class="bg-white border border-black lg:col-span-4">
+      <li class="bg-white border border-black lg:col-span-4 ranking-item-top">
         <!-- card-img -->
         <div
           class="lg:relative lg:before:bg-white lg:before:font-paytone lg:before:outline-1 lg:before:outline lg:before:outline-black lg:before:text-32 lg:before:leading-10.1 lg:before:font- lg:before:content-['1'] lg:before:w-16 lg:before:h-16 lg:before:flex lg:before:justify-center lg:before:items-center lg:before:absolute lg:before:top-0 lg:before:left-0"
         >
+          <div
+            class="absolute inset-0 transition-all duration-300 opacity-0 bg-black/50 ranking-item-top-hover"
+          >
+            <button
+              type="button"
+              class="absolute bottom-0 right-0 bg-white btn-more"
+            >
+              MORE
+            </button>
+          </div>
           <img
             class="lg:h-93.5 lg:w-full lg:object-cover lg:object-top"
             src="./assets/images/art04.jpg"
@@ -167,11 +177,21 @@ current: index
         </div>
       </li>
       <!-- 爆炸頭的母親 -->
-      <li class="bg-white border border-black lg:col-span-4">
+      <li class="bg-white border border-black lg:col-span-4 ranking-item-top">
         <!-- card-img -->
         <div
           class="lg:relative lg:before:bg-white lg:before:font-paytone lg:before:outline-1 lg:before:outline lg:before:outline-black lg:before:text-32 lg:before:leading-10.1 lg:before:font- lg:before:content-['2'] lg:before:w-16 lg:before:h-16 lg:before:flex lg:before:justify-center lg:before:items-center lg:before:absolute lg:before:top-0 lg:before:left-0"
         >
+          <div
+            class="absolute inset-0 transition-opacity duration-300 opacity-0 bg-black/50 ranking-item-top-hover"
+          >
+            <button
+              type="button"
+              class="absolute bottom-0 right-0 bg-white btn-more"
+            >
+              MORE
+            </button>
+          </div>
           <img
             class="lg:h-93.5 lg:w-full lg:object-cover lg:object-top"
             src="./assets/images/art05.jpg"
@@ -194,11 +214,21 @@ current: index
         </div>
       </li>
       <!-- 夏天的時候 -->
-      <li class="bg-white border border-black lg:col-span-4">
+      <li class="bg-white border border-black lg:col-span-4 ranking-item-top">
         <!-- card-img -->
         <div
           class="lg:relative lg:before:bg-white lg:before:font-paytone lg:before:outline-1 lg:before:outline lg:before:outline-black lg:before:text-32 lg:before:leading-10.1 lg:before:font- lg:before:content-['3'] lg:before:w-16 lg:before:h-16 lg:before:flex lg:before:justify-center lg:before:items-center lg:before:absolute lg:before:top-0 lg:before:left-0"
         >
+          <div
+            class="absolute inset-0 transition-opacity duration-300 opacity-0 bg-black/50 ranking-item-top-hover"
+          >
+            <button
+              type="button"
+              class="absolute bottom-0 right-0 bg-white btn-more"
+            >
+              MORE
+            </button>
+          </div>
           <img
             class="lg:h-93.5 lg:w-full lg:object-cover lg:object-top"
             src="./assets/images/art06.jpg"
@@ -221,7 +251,7 @@ current: index
         </div>
       </li>
       <!-- 追求者送我的花 -->
-      <li class="flex bg-white border border-black lg:col-span-4">
+      <li class="flex bg-white border border-black lg:col-span-4 ranking-item">
         <!-- card-img -->
         <div class="flex">
           <div
@@ -229,11 +259,19 @@ current: index
           >
             4
           </div>
-          <img
-            class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
-            src="./assets/images/art13.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
+              src="./assets/images/art13.jpg"
+              alt="art04"
+            />
+          </div>
         </div>
         <div class="flex-grow border-l border-black">
           <!-- card-body -->
@@ -253,7 +291,7 @@ current: index
         </div>
       </li>
       <!-- 今天釣到的魚 -->
-      <li class="flex bg-white border border-black lg:col-span-4">
+      <li class="flex bg-white border border-black lg:col-span-4 ranking-item">
         <!-- card-img -->
         <div class="flex">
           <div
@@ -261,11 +299,19 @@ current: index
           >
             5
           </div>
-          <img
-            class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
-            src="./assets/images/art07.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
+              src="./assets/images/art07.jpg"
+              alt="art04"
+            />
+          </div>
         </div>
         <div class="flex-grow border-l border-black">
           <!-- card-body -->
@@ -285,7 +331,7 @@ current: index
         </div>
       </li>
       <!-- 人生中的貓咪們 -->
-      <li class="flex bg-white border border-black lg:col-span-4">
+      <li class="flex bg-white border border-black lg:col-span-4 ranking-item">
         <!-- card-img -->
         <div class="flex">
           <div
@@ -293,11 +339,19 @@ current: index
           >
             6
           </div>
-          <img
-            class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
-            src="./assets/images/art08.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="h-24 lg:w-21.25 lg:object-cover lg:object-top border-l border-black"
+              src="./assets/images/art08.jpg"
+              alt="art04"
+            />
+          </div>
         </div>
         <div class="flex-grow border-l border-black">
           <!-- card-body -->
@@ -320,18 +374,26 @@ current: index
     <!-- mobile -->
     <ul class="grid grid-cols-4 gap-4 mt-6 lg:hidden">
       <!-- 散步遇到的女人 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             1
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art04.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 border-l border-black"
+              src="./assets/images/art04.jpg"
+              alt="art04"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">
               散步遇到的女人
@@ -349,18 +411,26 @@ current: index
         </div>
       </li>
       <!-- 爆炸頭的母親 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             2
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art05.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 h-full border-l border-black"
+              src="./assets/images/art05.jpg"
+              alt="art05"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">
               爆炸頭的母親
@@ -378,18 +448,26 @@ current: index
         </div>
       </li>
       <!-- 夏天的時候 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             3
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art06.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 h-full border-l border-black"
+              src="./assets/images/art06.jpg"
+              alt="art06"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">夏天的時候</h3>
             <div
@@ -405,18 +483,26 @@ current: index
         </div>
       </li>
       <!-- 追求者送我的花 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             4
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art13.jpg"
-            alt="art04"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 h-full border-l border-black"
+              src="./assets/images/art13.jpg"
+              alt="art13"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">
               追求者送我的花
@@ -434,18 +520,26 @@ current: index
         </div>
       </li>
       <!-- 今天釣到的魚 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             5
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art07.jpg"
-            alt="art07"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 h-full border-l border-black"
+              src="./assets/images/art07.jpg"
+              alt="art07"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">
               今天釣到的魚
@@ -463,18 +557,26 @@ current: index
         </div>
       </li>
       <!-- 人生中的貓咪們 -->
-      <li class="col-span-4 bg-white">
+      <li class="col-span-4 bg-white ranking-item">
         <div class="flex border border-black">
           <div
             class="flex items-center px-2 py-6 text-2xl leading-6 font-paytone"
           >
             6
           </div>
-          <img
-            class="block object-cover w-20 border-l border-black"
-            src="./assets/images/art08.jpg"
-            alt="art08"
-          />
+          <div class="relative">
+            <button
+              type="button"
+              class="absolute inset-0 overflow-hidden text-white transition-all duration-300 opacity-0 bg-black/50 after:w-0 after:h-0 after:absolute after:border-16 after:border-t-transparent after:border-r-transparent after:border-b-red-500 after:border-l-transparent after:border-solid after:block after:bottom-0 after:-right-4 ranking-item-hover"
+            >
+              MORE
+            </button>
+            <img
+              class="block object-cover w-20 h-full border-l border-black"
+              src="./assets/images/art08.jpg"
+              alt="art08"
+            />
+          </div>
           <div class="flex-grow border-l border-black">
             <h3 class="text-lg font-bold leading-6.1 py-4 px-2">
               人生中的貓咪們
