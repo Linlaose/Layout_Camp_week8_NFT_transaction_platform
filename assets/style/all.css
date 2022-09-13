@@ -742,17 +742,27 @@ select {
 .absolute {
   position: absolute;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
 .inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
 }
-.top-15\.25 {
-  top: 3.8125rem;
+.top-0 {
+  top: 0px;
 }
 .left-0 {
   left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.top-15\.25 {
+  top: 3.8125rem;
 }
 .z-10 {
   z-index: 10;
@@ -808,6 +818,9 @@ select {
 .h-93 {
   height: 23.25rem;
 }
+.h-24 {
+  height: 6rem;
+}
 .h-4\.5 {
   height: 1.125rem;
 }
@@ -816,6 +829,9 @@ select {
 }
 .w-full {
   width: 100%;
+}
+.w-20 {
+  width: 5rem;
 }
 .w-21\.25 {
   width: 5.3125rem;
@@ -831,6 +847,11 @@ select {
 }
 .max-w-full {
   max-width: 100%;
+}
+.flex-grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -861,17 +882,20 @@ select {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
 .whitespace-nowrap {
   white-space: nowrap;
 }
-.border-0 {
-  border-width: 0px;
-}
 .border {
   border-width: 1px;
+}
+.border-0 {
+  border-width: 0px;
 }
 .border-b-2 {
   border-bottom-width: 2px;
@@ -879,11 +903,11 @@ select {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-l {
-  border-left-width: 1px;
-}
 .border-t {
   border-top-width: 1px;
+}
+.border-l {
+  border-left-width: 1px;
 }
 .border-t-4 {
   border-top-width: 4px;
@@ -930,6 +954,12 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
 .p-0 {
   padding: 0px;
 }
@@ -945,17 +975,25 @@ select {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .px-37\.5 {
   padding-left: 9.375rem;
@@ -978,6 +1016,9 @@ select {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.pl-2 {
+  padding-left: 0.5rem;
+}
 .pl-6 {
   padding-left: 1.5rem;
 }
@@ -992,6 +1033,9 @@ select {
 }
 .font-noto {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
+}
+.font-paytone {
+  font-family: "Paytone One", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
 .text-5xl {
   font-size: 3rem;
@@ -1053,6 +1097,9 @@ select {
 }
 .leading-7 {
   line-height: 1.75rem;
+}
+.leading-4\.1 {
+  line-height: 1.0625rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -1150,6 +1197,14 @@ select {
 }
 @media (min-width: 1024px) {
 
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1192,12 +1247,28 @@ select {
     height: 100%;
   }
 
+  .lg\:h-93\.5 {
+    height: 23.375rem;
+  }
+
+  .lg\:h-93 {
+    height: 23.25rem;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-21\.25 {
+    width: 5.3125rem;
   }
 
   .lg\:w-47\.5 {
@@ -1234,6 +1305,10 @@ select {
             justify-content: space-between;
   }
 
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -1263,6 +1338,20 @@ select {
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
   }
 
+  .lg\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .lg\:object-top {
+    -o-object-position: top;
+       object-position: top;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1271,6 +1360,16 @@ select {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:py-0 {
@@ -1339,5 +1438,107 @@ select {
 
   .lg\:leading-11 {
     line-height: 3.125rem;
+  }
+
+  .lg\:before\:absolute::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+
+  .lg\:before\:top-0::before {
+    content: var(--tw-content);
+    top: 0px;
+  }
+
+  .lg\:before\:left-0::before {
+    content: var(--tw-content);
+    left: 0px;
+  }
+
+  .lg\:before\:flex::before {
+    content: var(--tw-content);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .lg\:before\:h-16::before {
+    content: var(--tw-content);
+    height: 4rem;
+  }
+
+  .lg\:before\:w-16::before {
+    content: var(--tw-content);
+    width: 4rem;
+  }
+
+  .lg\:before\:items-center::before {
+    content: var(--tw-content);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .lg\:before\:justify-center::before {
+    content: var(--tw-content);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .lg\:before\:bg-white::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .lg\:before\:font-paytone::before {
+    content: var(--tw-content);
+    font-family: "Paytone One", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
+  }
+
+  .lg\:before\:text-32::before {
+    content: var(--tw-content);
+    font-size: 2rem;
+  }
+
+  .lg\:before\:leading-10\.1::before {
+    content: var(--tw-content);
+    line-height: 2.8125rem;
+  }
+
+  .lg\:before\:leading-10::before {
+    content: var(--tw-content);
+    line-height: 2.5rem;
+  }
+
+  .lg\:before\:outline::before {
+    content: var(--tw-content);
+    outline-style: solid;
+  }
+
+  .lg\:before\:outline-1::before {
+    content: var(--tw-content);
+    outline-width: 1px;
+  }
+
+  .lg\:before\:outline-black::before {
+    content: var(--tw-content);
+    outline-color: #000;
+  }
+
+  .lg\:before\:content-\[\'1\'\]::before {
+    --tw-content: '1';
+    content: var(--tw-content);
+  }
+
+  .lg\:before\:content-\[\'2\'\]::before {
+    --tw-content: '2';
+    content: var(--tw-content);
+  }
+
+  .lg\:before\:content-\[\'3\'\]::before {
+    --tw-content: '3';
+    content: var(--tw-content);
   }
 }
