@@ -45,4 +45,27 @@ if (headerLogo && window.innerWidth < 640) {
     mask.classList.add('opacity-0', '-z-10');
   });
 }
+"use strict";
+
+var swiper = new Swiper('.mySwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  grabCursor: true,
+  initialSlide: 1,
+  centeredSlides: true,
+  // 加這個才能讓 active 是目前撥放的物件
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
 //# sourceMappingURL=all.js.map

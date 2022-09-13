@@ -736,6 +736,9 @@ select {
 .invisible {
   visibility: hidden;
 }
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -1192,87 +1195,144 @@ select {
 .ranking-item:hover .ranking-item-hover{
     opacity: 1;
   }
+
+.swiper-slide{
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  width: 24% !important;
+  height: 50%;
+}
+
+.swiper-slide-active{
+  width: 49% !important;
+}
+
+.swiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 0;
+  opacity: 1;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.swiper-pagination-bullet-active{
+  width: 16px;
+  height: 8px;
+  background: #E6553B;
+}
+
 .placeholder\:font-noto::-webkit-input-placeholder {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
+
 .placeholder\:font-noto::-moz-placeholder {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
+
 .placeholder\:font-noto:-ms-input-placeholder {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
+
 .placeholder\:font-noto::-ms-input-placeholder {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
+
 .placeholder\:font-noto::placeholder {
   font-family: "Noto Sans TC", "-apple - system", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", monospace, Arial, cursive, sans-serif;
 }
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
 }
+
 .after\:bottom-0::after {
   content: var(--tw-content);
   bottom: 0px;
 }
+
 .after\:-right-4::after {
   content: var(--tw-content);
   right: -1rem;
 }
+
 .after\:block::after {
   content: var(--tw-content);
   display: block;
 }
+
 .after\:h-0::after {
   content: var(--tw-content);
   height: 0px;
 }
+
 .after\:w-0::after {
   content: var(--tw-content);
   width: 0px;
 }
+
 .after\:border-16::after {
   content: var(--tw-content);
   border-width: 16px;
 }
+
 .after\:border-solid::after {
   content: var(--tw-content);
   border-style: solid;
 }
+
 .after\:border-t-transparent::after {
   content: var(--tw-content);
   border-top-color: transparent;
 }
+
 .after\:border-r-transparent::after {
   content: var(--tw-content);
   border-right-color: transparent;
 }
+
 .after\:border-b-red-500::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-bottom-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
+
 .after\:border-l-transparent::after {
   content: var(--tw-content);
   border-left-color: transparent;
 }
+
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+
 .hover\:decoration-1:hover {
   text-decoration-thickness: 1px;
 }
+
 .focus\:ring-0:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   -webkit-box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
           box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
+
 @media (min-width: 1024px) {
 
   .lg\:relative {
@@ -1281,6 +1341,11 @@ select {
 
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .lg\:mt-0 {
@@ -1293,6 +1358,10 @@ select {
 
   .lg\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .lg\:ml-6 {
@@ -1331,6 +1400,10 @@ select {
 
   .lg\:h-93 {
     height: 23.25rem;
+  }
+
+  .lg\:h-109\.75 {
+    height: 27.4375rem;
   }
 
   .lg\:h-10 {

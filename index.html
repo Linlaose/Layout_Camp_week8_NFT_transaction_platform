@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/bf3cb62f9b.js"
       crossorigin="anonymous"
@@ -734,6 +738,47 @@
       </h3>
       <button type="button" class="title-btn-more">MORE</button>
     </div>
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper lg:h-109.75 lg:items-center lg:my-12">
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="./assets/images/artist01.jpg"
+            alt="artist"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="./assets/images/artist02.jpg"
+            alt="artist"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="./assets/images/artist03.jpg"
+            alt="artist"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="./assets/images/artist04.jpg"
+            alt="artist"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="./assets/images/artist05.jpg"
+            alt="artist"
+          />
+        </div>
+      </div>
+      <div class="static swiper-pagination lg:mb-20"></div>
+    </div>
   </section>
 </div>
 <p class="text-3xl font-bold leading-4 underline">This is a demo.</p>
@@ -750,6 +795,7 @@
         © ART NFT. All Rights Reserved
       </small>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
