@@ -49,4 +49,38 @@
   .btn-more:hover::after{
     border-color: transparent transparent #000 transparent;
   }
+
+  .title-btn-more{
+    position: relative;
+    width: 132px;
+    padding: 8px 48px;
+    font-size: 18px;
+    line-height: 19px;
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .title-btn-more:hover{
+    color: #fff;
+    background: #E6553B;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+  }
+  .title-btn-more::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent #E6553B transparent;
+    transition: all .3s;
+  }
+  
+  .title-btn-more:hover::after {
+    border-color: transparent transparent #000 transparent;
+  }
 }
