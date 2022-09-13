@@ -122,68 +122,132 @@
         </button>
       </div>
     </header>
+    <div
+      id="bg-mask"
+      class="fixed inset-0 bg-gray-500/75 top-15.25 opacity-0 -z-10"
+    ></div>
     <!-- header end -->
 
     <main>
-<section class="bg-white border-b-2 border-black">
-  <div>
-    <img class="block max-w-full" src="./assets/images/art01.jpg" alt="art01" />
-  </div>
-  <div class="grid grid-cols-4 px-3 py-8">
-    <div class="col-span-4">
-      <p class="text-lg leading-4.3">Kemus Wu</p>
-      <h3 class="text-2xl leading-8.1 font-bold mt-2">瞳孔:流動的脈絡</h3>
-      <p class="mt-6 text-base">
-        眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
-      </p>
+<div class="bg-gray-100 lg:pt-10">
+  <section>
+    <!-- 推薦系列 -->
+    <div
+      class="container gap-6 mx-auto bg-white border-b-2 border-black lg:grid lg:grid-cols-12 lg:border"
+    >
+      <!-- Recommend -->
+      <div class="flex col-span-8">
+        <h2
+          class="hidden px-6 pt-6 text-5xl text-white bg-black lg:block writing-mode-vertical-lr leading-11"
+        >
+          Recommend<span
+            class="font-bold font-noto text-xl leading-6.1 pt-4 tracking-widest"
+            >推薦系列</span
+          >
+        </h2>
+        <!-- 作品圖 -->
+        <div>
+          <img
+            class="block max-w-full"
+            src="./assets/images/art01.jpg"
+            alt="art01"
+          />
+        </div>
+      </div>
+      <!-- 作品簡介 -->
+      <div class="col-span-4">
+        <div
+          class="grid grid-cols-4 px-3 py-8 lg:pl-0 lg:pr-6 lg:pb-6 lg:pt-20 lg:h-full lg:flex lg:flex-col lg:justify-between"
+        >
+          <div class="col-span-4">
+            <p class="text-lg leading-4.3">Kemus Wu</p>
+            <h3
+              class="text-2xl leading-8.1 font-bold mt-2 lg:text-5xl lg:leading-13"
+            >
+              瞳孔:流動的脈絡
+            </h3>
+            <p class="mt-6 text-base">
+              眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
+            </p>
+          </div>
+          <div class="flex justify-end col-span-4">
+            <button type="button" class="mt-6 btn-more lg:mt-0">MORE</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-end col-span-4">
-      <button type="button" class="mt-6 btn-more">MORE</button>
+    <div
+      class="container mx-auto lg:grid lg:grid-cols-12 lg:border-l lg:border-r lg:border-b lg:border-black"
+    >
+      <!-- 海洋波度 -->
+      <div class="col-span-6 bg-white border-b-2 border-black lg:border-0">
+        <div class="lg:flex lg:flex-row-reverse">
+          <!-- 作品圖 -->
+          <div>
+            <img
+              class="block object-cover w-full h-93"
+              src="./assets/images/art02.jpg"
+              alt="art02"
+            />
+          </div>
+          <!-- 作品簡介 -->
+          <div
+            class="grid grid-cols-4 px-3 py-8 lg:pt-12 lg:px-6 lg:pb-6 lg:flex lg:flex-col lg:justify-between lg:w-1/2"
+          >
+            <div class="col-span-4">
+              <p class="text-lg leading-4.3">Joanne</p>
+              <h3
+                class="text-2xl leading-8.1 font-bold mt-2 lg:text-32 lg:leading-10.2"
+              >
+                海洋波度
+              </h3>
+              <p class="mt-6 text-base">
+                海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+              </p>
+            </div>
+            <div class="flex justify-end col-span-4">
+              <button type="button" class="mt-6 btn-more lg:mt-0">MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 我家窗前的鳥 -->
+      <div
+        class="col-span-6 bg-white border-b-2 border-black lg:border-b-0 lg:border-l"
+      >
+        <div class="lg:flex lg:flex-row-reverse">
+          <!-- 作品圖 -->
+          <div>
+            <img
+              class="block object-cover w-full h-93"
+              src="./assets/images/art21.jpg"
+              alt="art21"
+            />
+          </div>
+          <!-- 作品簡介 -->
+          <div
+            class="grid grid-cols-4 px-3 py-8 lg:pt-12 lg:px-6 lg:pb-6 lg:flex lg:flex-col lg:justify-between lg:pl-0 lg:w-1/2"
+          >
+            <div class="col-span-4">
+              <p class="text-lg leading-4.3">Michael</p>
+              <h3
+                class="text-2xl leading-8.1 font-bold mt-2 lg:text-32 lg:leading-10.2"
+              >
+                我家窗前的鳥
+              </h3>
+              <p class="mt-6 text-base">
+                家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+              </p>
+            </div>
+            <div class="flex justify-end col-span-4">
+              <button type="button" class="mt-6 btn-more lg:mt-0">MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<section class="bg-white border-b-2 border-black">
-  <div>
-    <img
-      class="block object-cover w-full h-93"
-      src="./assets/images/art02.jpg"
-      alt="art02"
-    />
-  </div>
-  <div class="grid grid-cols-4 px-3 py-8">
-    <div class="col-span-4">
-      <p class="text-lg leading-4.3">Joanne</p>
-      <h3 class="text-2xl leading-8.1 font-bold mt-2">海洋波度</h3>
-      <p class="mt-6 text-base">
-        海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
-      </p>
-    </div>
-    <div class="flex justify-end col-span-4">
-      <button type="button" class="mt-6 btn-more">MORE</button>
-    </div>
-  </div>
-</section>
-<section class="bg-white border-b-2 border-black">
-  <div>
-    <img
-      class="block object-cover w-full h-93"
-      src="./assets/images/art21.jpg"
-      alt="art21"
-    />
-  </div>
-  <div class="grid grid-cols-4 px-3 py-8">
-    <div class="col-span-4">
-      <p class="text-lg leading-4.3">Michael</p>
-      <h3 class="text-2xl leading-8.1 font-bold mt-2">我家窗前的鳥</h3>
-      <p class="mt-6 text-base">
-        家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
-      </p>
-    </div>
-    <div class="flex justify-end col-span-4">
-      <button type="button" class="mt-6 btn-more">MORE</button>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 <p class="text-3xl font-bold leading-4 underline">This is a demo.</p>
 
 <i class="fa-brands fa-ethereum"></i>
