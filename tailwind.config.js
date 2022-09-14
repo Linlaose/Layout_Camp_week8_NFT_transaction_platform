@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontSize: {
         '32': '2rem',
+        '80': '5rem',
       },
       lineHeight: { // 此次客製化規則，lh 10 以上，每差 10px 差 1 lh
         '4.1': '1.0625rem', /* 17px */
@@ -72,7 +73,10 @@ module.exports = {
       },
       transitionProperty: {
         'height': 'height',
-      }
+      },
+      scale: {
+        '10': '.1',
+      },
     },
   },
   plugins: [

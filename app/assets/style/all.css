@@ -110,6 +110,11 @@
   width: 49% !important;
 }
 
+.swiper-slide-active .transform-scale{
+  transform: scale(1);
+  opacity: 1;
+}
+
 .swiper-pagination-bullet{
   width: 8px;
   height: 8px;
