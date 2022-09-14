@@ -758,6 +758,12 @@ select {
   bottom: 0px;
   left: 0px;
 }
+.inset-6 {
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -787,6 +793,9 @@ select {
 }
 .col-span-6 {
   grid-column: span 6 / span 6;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .mx-auto {
   margin-left: auto;
@@ -887,6 +896,12 @@ select {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .flex-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -919,6 +934,12 @@ select {
 .gap-4 {
   gap: 1rem;
 }
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+.gap-y-12 {
+  row-gap: 3rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -950,6 +971,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -967,6 +992,9 @@ select {
 }
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
+}
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
 }
 .bg-transparent {
   background-color: transparent;
@@ -1003,6 +1031,9 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-0 {
   padding: 0px;
 }
@@ -1034,6 +1065,10 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1061,6 +1096,12 @@ select {
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pl-4 {
+  padding-left: 1rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
@@ -1103,9 +1144,12 @@ select {
 .text-32 {
   font-size: 2rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-40 {
+  font-size: 2.5rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -1144,6 +1188,9 @@ select {
 .leading-4\.1 {
   line-height: 1.0625rem;
 }
+.leading-10 {
+  line-height: 2.5rem;
+}
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -1155,9 +1202,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .opacity-0 {
   opacity: 0;
@@ -1406,6 +1453,10 @@ select {
     margin-bottom: 5rem;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:ml-6 {
     margin-left: 1.5rem;
   }
@@ -1480,6 +1531,10 @@ select {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1508,6 +1563,10 @@ select {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-y-12 {
+    row-gap: 3rem;
   }
 
   .lg\:border {
@@ -1553,6 +1612,10 @@ select {
     padding: 1rem;
   }
 
+  .lg\:p-6 {
+    padding: 1.5rem;
+  }
+
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1571,6 +1634,11 @@ select {
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-0 {
@@ -1627,6 +1695,11 @@ select {
 
   .lg\:text-80 {
     font-size: 5rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:leading-13 {
