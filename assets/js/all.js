@@ -52,6 +52,7 @@ var swiper = new Swiper('.mySwiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
+  spaceBetween: 0,
   grabCursor: true,
   initialSlide: 1,
   centeredSlides: true,

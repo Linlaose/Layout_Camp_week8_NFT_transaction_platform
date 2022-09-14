@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./assets/images/logo.svg" />
+    <title>ART NFT | NFT 作品探索</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf3cb62f9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="transition-colors duration-500">
+    <header
+      class="sticky top-0 left-0 right-0 z-10 flex items-center justify-between px-3 py-4 bg-gray-100 border-b border-black lg:py-0 lg:px-18"
+    >
+      <div class="container flex items-center justify-between mx-auto">
+        <h1>
+          <a
+            id="header-logo"
+            href="index.html"
+            class="block overflow-hidden bg-contain w-21.25 lg:w-47.5 lg:h-10 bg-no-repeat h-4.5 transition-opacity duration-500 indent-101 bg-logo whitespace-nowrap"
+          >
+            ART NFT
+          </a>
+        </h1>
+        <!-- icon-box -->
+        <div id="icon-box" class="flex items-center lg:hidden">
+          <!-- dynamic-search-bar -->
+          <div id="search-text-bar" class="hidden w-full">
+            <i
+              id="go-back"
+              class="text-xs cursor-pointer fa-solid fa-angle-left hover:text-red-500"
+            ></i>
+            <input
+              class="p-0 ml-4 bg-transparent border-0 focus:ring-0 w-9/10 placeholder:font-noto"
+              type="text"
+              name="search-text"
+              id="search-text"
+              placeholder="搜尋作品名稱、藝術家名稱"
+            />
+          </div>
+          <!-- search-icon -->
+          <i
+            id="search"
+            class="text-lg text-black cursor-pointer lg:hidden lg:ml-6 fa-solid fa-magnifying-glass hover:text-red-500"
+          ></i>
+          <!-- burger -->
+          <div id="burger-box" class="w-10 pl-6 lg:hidden">
+            <i
+              id="burger"
+              class="text-lg text-black transition-opacity duration-1000 cursor-pointer fa-solid fa-bars hover:text-red-500"
+            ></i>
+            <i
+              id="burger-cancel"
+              class="hidden text-lg text-black transition-opacity duration-1000 cursor-pointer fa-solid fa-xmark hover:text-red-500"
+            ></i>
+          </div>
+        </div>
+        <ul class="hidden lg:flex lg:items-center">
+          <li class="px-12 border-l border-black lg:py-8">
+            <div id="search-area" class="hidden lg:flex">
+              <input
+                class="p-0 bg-transparent border-0 focus:ring-0 w-72 placeholder:font-noto"
+                type="text"
+                name="search-text"
+                id="search-text"
+                placeholder="搜尋作品名稱、藝術家名稱"
+              />
+              <i
+                class="text-2xl leading-6 text-black transition-colors duration-300 cursor-pointer lg:ml-6 fa-solid fa-magnifying-glass hover:text-red-500"
+              ></i>
+            </div>
+          </li>
+          <li class="border-l border-black">
+            <a
+              class="block px-12 py-8 transition-colors duration-300 hover:text-red-500"
+              href="./explore.html"
+              >探索</a
+            >
+          </li>
+          <li class="border-l border-black">
+            <a
+              class="block px-12 py-8 transition-colors duration-300 hover:text-red-500"
+              href="#"
+              >市值</a
+            >
+          </li>
+          <li class="border-l border-black">
+            <a
+              class="block py-8 pl-12 transition-colors duration-300 hover:text-red-500"
+              href="#"
+            >
+              <i class="block text-2xl leading-6 fa-solid fa-wallet"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- burger-content -->
+        <div
+          id="burger-content"
+          class="absolute invisible top-15.25 left-0 px-3 bg-white z-10 w-full text-center"
+        >
+          <a
+            class="block py-6 px-37.5 border-b border-black hover:text-red-500 font-bold"
+            href="#"
+            >探索</a
+          >
+          <a class="block py-6 px-37.5 hover:text-red-500 font-bold" href="#"
+            >市值</a
+          >
+          <button type="button" class="mb-6 bg-red-500 border border-black">
+            <a class="block py-3 text-white px-33" href="#">連結錢包</a>
+          </button>
+        </div>
+      </div>
+      <!-- logo -->
+    </header>
+    <div
+      id="bg-mask"
+      class="fixed inset-0 bg-gray-500/75 top-15.25 opacity-0 -z-10"
+    ></div>
+    <!-- header end -->
+
+    <main>
+<div class="pt-6 pb-12 bg-gray-100 lg:pt-10 lg:pb-20">
+  <section class="container px-3 mx-auto lg:px-0">
+    <ul class="grid grid-cols-2 gap-6 lg:mt-12 lg:grid-cols-4">
+      <li>
+        <ul class="flex flex-col gap-y-6 lg:gap-y-12">
+          <li>
+            <div>
+              <div class="relative p-2 bg-white lg:p-6">
+                <!-- <div class="absolute bg-black/70 inset-6">
+                    <div
+                      class="absolute flex flex-col items-end justify-between p-4 border border-white inset-6 bg-black/70"
+                    >
+                      <div>
+                        <p class="p-4 text-white">
+                          唯一想擁有的人，唯一不可以擁有的
+                        </p>
+                        <strong class="pl-4 text-white">
+                          <i class="fa-brands fa-ethereum"></i>
+                          <span class="pl-2">300</span>
+                        </strong>
+                      </div>
+                      <div>
+                        <button type="button" class="p-4 bg-white btn-more">
+                          MORE
+                        </button>
+                      </div>
+                    </div>
+                  </div> -->
+                <img
+                  class="bg-white"
+                  src="./assets/images/art09.jpg"
+                  alt="art09"
+                />
+              </div>
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                區塊戀-他的私生活
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art12.jpg"
+                alt="art12"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                不哭不哭眼淚是珍珠
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art19.jpg"
+                alt="art19"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                野小孩——叫你不要玩那個
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex flex-col gap-y-6 lg:gap-y-12">
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art10.jpg"
+                alt="art10"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                夏娃的醜聞
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art03.jpg"
+                alt="art03"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                十分鐘就到
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art16.jpg"
+                alt="art16"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                柔美的細胞小將
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex flex-col gap-y-6 lg:gap-y-12">
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art02.jpg"
+                alt="art02"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                藍色啤酒海
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art04.jpg"
+                alt="art04"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                我這樣有美嗎
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art15.jpg"
+                alt="art15"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                心如止水——今天吃素
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex flex-col gap-y-6 lg:gap-y-12">
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art11.jpg"
+                alt="art11"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                沒有人愛我
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art27.jpg"
+                alt="art27"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                我真的受傷了
+              </h4>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                class="p-2 bg-white lg:p-6"
+                src="./assets/images/art06.jpg"
+                alt="art06"
+              />
+              <h4
+                class="mt-2 text-sm lg:border-b lg:border-black lg:pb-4 lg:mt-4 lg:text-base"
+              >
+                每當夏天我吹著溫暖的風
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</div>
+</main>
+
+    <footer class="text-center bg-gray-100 border-t border-black footer">
+      <small
+        class="block w-full py-6 mt-2 text-base border-t-4 border-black hover:underline hover:decoration-1 font-noto"
+      >
+        © ART NFT. All Rights Reserved
+      </small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
