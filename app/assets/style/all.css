@@ -93,6 +93,9 @@
   .ranking-item:hover .ranking-item-hover{
     opacity: 1;
   }
+  .artwork-item:hover .artwork-item-hover{
+    opacity: 1;
+  }
 }
 
 .swiper-slide{
