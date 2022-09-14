@@ -7,7 +7,7 @@ const swiper = new Swiper('.mySwiper', {
   initialSlide: 1,
   centeredSlides: true, // 加這個才能讓 active 是目前撥放的物件
   breakpoints: {
-    640: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 24,
     },
