@@ -3,6 +3,7 @@ const swiper = new Swiper('.mySwiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
+  spaceBetween: 0,
   grabCursor: true,
   initialSlide: 1,
   centeredSlides: true, // 加這個才能讓 active 是目前撥放的物件
