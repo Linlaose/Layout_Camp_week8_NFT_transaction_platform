@@ -843,14 +843,14 @@ select {
 .hidden {
   display: none;
 }
+.h-full {
+  height: 100%;
+}
 .h-93 {
   height: 23.25rem;
 }
 .h-24 {
   height: 6rem;
-}
-.h-full {
-  height: 100%;
 }
 .h-86 {
   height: 21.5rem;
@@ -1091,9 +1091,6 @@ select {
 .pb-12 {
   padding-bottom: 3rem;
 }
-.pl-4 {
-  padding-left: 1rem;
-}
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -1212,10 +1209,10 @@ select {
 .opacity-0 {
   opacity: 0;
 }
-.transition-all {
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
+.transition-opacity {
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1223,10 +1220,10 @@ select {
        -o-transition-duration: 150ms;
           transition-duration: 150ms;
 }
-.transition-opacity {
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
+.transition-all {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1247,15 +1244,15 @@ select {
        -o-transition-duration: 150ms;
           transition-duration: 150ms;
 }
-.duration-300 {
-  -webkit-transition-duration: 300ms;
-       -o-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
 .duration-500 {
   -webkit-transition-duration: 500ms;
        -o-transition-duration: 500ms;
           transition-duration: 500ms;
+}
+.duration-300 {
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 .duration-1000 {
   -webkit-transition-duration: 1000ms;
@@ -1271,6 +1268,9 @@ select {
     opacity: 1;
   }
 .ranking-item:hover .ranking-item-hover{
+    opacity: 1;
+  }
+.artwork-item:hover .artwork-item-hover{
     opacity: 1;
   }
 
